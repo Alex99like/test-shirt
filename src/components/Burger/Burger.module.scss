@@ -1,0 +1,27 @@
+.wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-size: 29px;
+  z-index: 1;
+  border-radius: 15px;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+  //box-shadow: 0 0 1px 2px #000000; 
+  background: #000000;
+  color: #ffffff;
+  transition: .4s all;
+  
+  padding: 5px;
+
+  &.active {
+    background: transparent;
+    box-shadow: 0 0 1px 2px transparent; 
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+}
