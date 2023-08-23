@@ -7,7 +7,7 @@ export function Shirt() {
   const { color } = useAppSelector(state => state.root)
 
   //@ts-ignore
-  const { nodes, materials } = useGLTF('models/shirt_baked_2.glb')
+  const { nodes, materials } = useGLTF('models/shirt_baked_2.glft')
   useFrame((_, delta) => easing.dampC(materials.lambert1.color, color, 0.4, delta))
   return (
     <mesh 
